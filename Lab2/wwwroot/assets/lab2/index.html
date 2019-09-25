@@ -22,7 +22,7 @@
                 <a name="landingpage"></a>
                 <h1 class="topic-header">Landing Page</h1>
                 <div class="topic-content">
-                    <h1>Lab 2: Top 10 Dog Breed Rankings</h1>
+                    <h1>Lab 2: Top 3 Dog Breed Rankings</h1>
                     <p>
                         This will serve as a homepage and provide information
                         regarding the website
@@ -39,54 +39,89 @@
                     </p>
 
                     <h1 class="info-header">Rank #1: Labrador Retriever</h1>
-                    <img class="info-image-container" id="labrador-retriever-img" src="assets/img/labrador-retriever.jpg"/>
-                    <p class="info-content">
-                        The Labrador Retriever is a large dog breed of retriever-gun dog. It is one of the most
-                        popular dog breeds in Canada, the United Kingdom and the United States. <br />
+                    <img class="info-image-container" id="labrador-retriever-img" src="assets/img/labrador-retriever.jpg" />
+                    <div class="info-content">
+                        <p class="dog-desc">
+                            The Labrador Retriever is a large dog breed of retriever-gun dog. <br />It is one of the most
+                            popular dog breeds in Canada, the United Kingdom and the United States. <br />
+                        </p>  <br />
+                    </div>
+                    <div class="dog-stats">
+                        <strong>Life expectancy</strong>: 10 – 14 years <br />
+                        <strong>Weight</strong>: Male: 64–79 lbs (29–36 kg), Female: 55–71 lbs (25–32 kg) <br />
+                        <strong>Colors</strong>: Black, Chocolate, Yellow <br />
+                        <strong>Height</strong>: Male: 22–24 inches (57–62 cm), Female: 22–24 inches (55–60 cm) <br />
+                        <strong>Temperament</strong>: Intelligent, Even Tempered, Kind, Agile, Outgoing, Trusting, Gentle <br />
+                    </div>
 
-                        <div class="dog-stats">
-                            <strong>Life expectancy</strong>: 10 – 14 years <br />
-                            <strong>Weight</strong>: Male: 64–79 lbs (29–36 kg), Female: 55–71 lbs (25–32 kg) <br />
-                            <strong>Colors</strong>: Black, Chocolate, Yellow <br />
-                            <strong>Height</strong>: Male: 22–24 inches (57–62 cm), Female: 22–24 inches (55–60 cm) <br />
-                            <strong>Temperament</strong>: Intelligent, Even Tempered, Kind, Agile, Outgoing, Trusting, Gentle <br />
-                            <strong>Did you know</strong>: Labrador Retriever is the most popular dog breed by registrations (191,988) worldwide. <br />
-                        </div>
+                    <h1 class="info-header">Rank #2 German Shepherd</h1>
+                    <img class="info-image-container" id="german-shepherd-img" src="assets/img/german-shepherd.jpg" />
+                    <div class="info-content">
+                        <p class="dog-desc">
+                            The German Shepherd is a breed of medium to large-sized working dog that originated in Germany. <br />
+                            In the English language, the breed's officially recognized name is German Shepherd Dog.  <br />
+                        </p>  <br />
+                    </div>
+                    <div class="dog-stats">
+                        <strong>Life expectancy</strong>: 9 – 13 years <br />
+                        <strong>Weight</strong>: Male: 66–88 lbs (30–40 kg), Female: 49–71 lbs (22–32 kg) <br />
+                        <strong>Colors</strong>: Black, Black & Tan, Red & Black, Sable, Grey, Black & Silver <br />
+                        <strong>Height</strong>: Male: 24–26 inches (60–65 cm), Female: 22–24 inches (55–60 cm) <br />
+                        <strong>Temperament</strong>: Intelligent, Obedient, Loyal, Alert, Confident, Curious, Watchful, Courageous <br />
+                    </div>
 
-                    </p>
+                    <h1 class="info-header">Rank #3 Golden Retriever</h1>
+                    <img class="info-image-container" id="golden-retriever-img" src="assets/img/golden-retriever.jpg" />
+                    <div class="info-content">
+                        <p class="dog-desc">
+                            The Golden Retriever is a large-sized gun dog that retrieves shot waterfowl, such as ducks and upland game birds,
+                            during hunting and shooting parties. <br />The name "retriever" refers to the breed's ability to retrieve shot
+                            game undamaged due to their soft mouth.
+                        </p>  <br />
+                    </div>
 
-                    <h1 class="info-header">Title 2</h1>
-                    <p class="info-content">Title 2 Content</p>
-
-                    <h1 class="info-header">Title 3</h1>
-                    <p class="info-content">Title 3 Content</p>
+                    <div class="dog-stats">
+                        <strong>Life expectancy</strong>: 10 – 12 years <br />
+                        <strong>Weight</strong>: Male: 65–75 lbs (30–34 kg), Female: 55–71 lbs (25–32 kg) <br />
+                        <strong>Colors</strong>: Dark Golden, Cream, Light Golden, Golden <br />
+                        <strong>Height</strong>: Male: 22–24 inches (56–61 cm), Female: 20–22 inches (51–56 cm) <br />
+                        <strong>Temperament</strong>: Reliable, Intelligent, Kind, Trustworthy, Confident, Friendly <br />
+                    </div>
+                    <br />
                 </div>
             </div>
+
             <div class="topic-container">
                 <a name="formpage"></a>
                 <h1 class="topic-header">Form Page</h1>
+                <p id="form-header-prompt">Let us know what you think! Which dog breed is your favorite and why?</p>
                 <div class="topic-content">
                     <p>
                         This will serve as a form to collect to collect information
                         from users
                     </p>
-                    <form id="form1" method="post"
-                          action="http://cis-iis2.temple.edu/users/pascucci/cis3342/FormProcessor.aspx?mail=tuf49524@temple.edu">
-                        First Name:
-                        <input type="text" name="firstname" /><br />
-                        <br />
-                        Last Name:
-                        <input type="text" name="lastname" /><br />
-                        <br />
-                        Email:
-                        <input type="text" name="email" /><br />
-                        <br />
-                        <input type="submit" name="submit" value="Submit">
-                        <br />
-                        <br />
-                    </form>
+                    <div class="form-container">
+                        <form id="form1" method="post"
+                              action="http://cis-iis2.temple.edu/users/pascucci/cis3342/FormProcessor.aspx?mail=tuf49524@temple.edu">
+                            First Name:
+                            <input type="text" name="firstname" /><br />
+                            <br />
+                            Last Name:
+                            <input type="text" name="lastname" /><br />
+                            <br />
+                            Email:
+                            <input type="text" name="email" /><br />
+                            <br />
+                            <textarea rows="4" cols="50" name="form-answer" form="form1">Enter your answer here.</textarea>
+                            <br />
+                            <input type="submit" name="submit" value="Submit">
+                            <br />
+                            <br />
+                        </form>
+                    </div>
                 </div>
             </div>
+
             <div class="topic-container">
                 <a name="photogallerypage"></a>
                 <h1 class="topic-header">Photo Gallery</h1>

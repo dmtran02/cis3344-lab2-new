@@ -68,23 +68,32 @@
 }
 
 .info-image-container {
-    width: 350px;
+    width: 400px;
     height: 250px;
     border: 4px solid black;
     border-radius: 15px;
 }
 
 .info-content {
+    position: relative;
     text-align: center;
+}
+
+.dog-desc {
+    font-size: 22px;
+}
+
+.dog-stats {
+    position: relative;
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 50%;
+    height: 20%;
+    left: 25%;
 }
 
 #float-clear {
     clear: left;
-}
-
-.topic-content p {
-    text-align: left;
-    text-indent: 50px;
 }
 
 .topic-content form {
