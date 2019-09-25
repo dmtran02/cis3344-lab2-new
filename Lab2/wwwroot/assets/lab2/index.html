@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="/assets/lab2/assets/css/mainlab2.css" />
+        <title>Lab 2 Page</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <h1 id="header-title">Responsive Web Design</h1>
+        </div>
+        <div class="navbar-container">
+            <a class="active" href="">Home</a>
+            <a href="#landingpage">Landing Page</a>
+            <a href="#informationalpage">Informational Page</a>
+            <a href="#formpage">Form Page</a>
+            <a href="#photogallerypage">Photo Gallery Page</a>
+        </div>
+        <br />
+        <div class="content-container">
+            <div class="topic-container">
+                <a name="landingpage"></a>
+                <h1 class="topic-header">Landing Page</h1>
+                <div class="topic-content">
+                    <h1>Lab 2: Top 10 Dog Breed Rankings</h1>
+                    <p>
+                        This will serve as a homepage and provide information
+                        regarding the website
+                    </p>
+                </div>
+            </div>
+            <div class="topic-container">
+                <a name="informationalpage"></a>
+                <h1 class="topic-header">Informational Page</h1>
+                <div class="topic-content">
+                    <p>
+                        This will serve as the information page containing the main
+                        content for the site
+                    </p>
+
+                    <h1 class="info-header">Rank #1: Labrador Retriever</h1>
+                    <img class="info-image-container" id="labrador-retriever-img" src="assets/img/labrador-retriever.jpg"/>
+                    <p class="info-content">
+                        The Labrador Retriever is a large dog breed of retriever-gun dog. It is one of the most
+                        popular dog breeds in Canada, the United Kingdom and the United States. <br />
+
+                        <div class="dog-stats">
+                            <strong>Life expectancy</strong>: 10 – 14 years <br />
+                            <strong>Weight</strong>: Male: 64–79 lbs (29–36 kg), Female: 55–71 lbs (25–32 kg) <br />
+                            <strong>Colors</strong>: Black, Chocolate, Yellow <br />
+                            <strong>Height</strong>: Male: 22–24 inches (57–62 cm), Female: 22–24 inches (55–60 cm) <br />
+                            <strong>Temperament</strong>: Intelligent, Even Tempered, Kind, Agile, Outgoing, Trusting, Gentle <br />
+                            <strong>Did you know</strong>: Labrador Retriever is the most popular dog breed by registrations (191,988) worldwide. <br />
+                        </div>
+
+                    </p>
+
+                    <h1 class="info-header">Title 2</h1>
+                    <p class="info-content">Title 2 Content</p>
+
+                    <h1 class="info-header">Title 3</h1>
+                    <p class="info-content">Title 3 Content</p>
+                </div>
+            </div>
+            <div class="topic-container">
+                <a name="formpage"></a>
+                <h1 class="topic-header">Form Page</h1>
+                <div class="topic-content">
+                    <p>
+                        This will serve as a form to collect to collect information
+                        from users
+                    </p>
+                    <form id="form1" method="post"
+                          action="http://cis-iis2.temple.edu/users/pascucci/cis3342/FormProcessor.aspx?mail=tuf49524@temple.edu">
+                        First Name:
+                        <input type="text" name="firstname" /><br />
+                        <br />
+                        Last Name:
+                        <input type="text" name="lastname" /><br />
+                        <br />
+                        Email:
+                        <input type="text" name="email" /><br />
+                        <br />
+                        <input type="submit" name="submit" value="Submit">
+                        <br />
+                        <br />
+                    </form>
+                </div>
+            </div>
+            <div class="topic-container">
+                <a name="photogallerypage"></a>
+                <h1 class="topic-header">Photo Gallery</h1>
+                <div class="topic-content">
+                    <div class="image-container">
+                        <img src="/assets/lab2/assets/img/fancy-doge-with-bg.png" alt="pic1" />
+                        <p><em>circa 1803</em></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/lab2/assets/img/fancy-doge-with-bg.png" alt="pic2" />
+                        <p><em>circa 1857</em></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/lab2/assets/img/fancy-doge-with-bg.png" alt="pic3" />
+                        <p><em>circa 1947</em></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/lab2/assets/img/fancy-doge-with-bg.png" alt="pic3" />
+                        <p><em>circa 1947</em></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/lab2/assets/img/fancy-doge-with-bg.png" alt="pic3" />
+                        <p><em>circa 1947</em></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/lab2/assets/img/fancy-doge-with-bg.png" alt="pic3" />
+                        <p><em>circa 1947</em></p>
+                    </div>
+                    <div id="float-clear"></div>
+                    <p>
+                        Desktop Version: This will serve as the photo gallery that will contain 6 images side-by-side
+                        without using a table.
+                    </p>
+                    <p>
+                        Mobile Version: The images must take up the entire width and appear stacked on top of each other
+                        for narrow screens.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <footer>
+            <br />
+            Name: Duc Tran <br />Email: tuf49524@temple.edu
+        </footer>
+    </body>
+</html>

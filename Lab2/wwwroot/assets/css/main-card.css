@@ -1,0 +1,55 @@
+.labs-container {
+    position: absolute;
+    /*border: 1px solid yellow;*/
+    padding: 0;
+    margin: 0;
+    top: 20%;
+    left: 13%;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.labs-card {
+    border: 1px solid white;
+    float: left;
+    margin: 40px;
+    padding: 0;
+    width: 400px;
+    height: 450px;
+    color: white;
+}
+
+.lab-links {
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+}
+
+.lab-card a:link {
+    color: lightseagreen;
+}
+
+.labs-card a:visited {
+    color: lawngreen;
+}
+
+.labs-card a:hover{
+    color: red;
+}
+
+#skills-list {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#lab1-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+#missing-project-image {
+    width: 300px;
+    height: 300px;
+}
