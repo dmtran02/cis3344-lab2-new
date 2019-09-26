@@ -62,6 +62,8 @@
 }
 
 .image-container img {
+    position: relative;
+    left: 35%;
     width: 100%;
     margin: 1%;
     margin-bottom: 8px;
@@ -70,6 +72,8 @@
 }
 
 .image-container p {
+    position: relative;
+    left: 35%;
     text-align: center;
 }
 
@@ -102,6 +106,8 @@
     width: 50%;
     height: 20%;
     left: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #float-clear {
@@ -115,9 +121,13 @@
     border: 3px solid black;
     border-radius: 10px;
     background-color: deepskyblue;
-    width: 50%;
-    left: 25%;
-    padding: 14px;
+    width: 45%;
+    left: 27%;
+    padding: 16px;
+}
+
+.form-entry {
+    width: 95%;
 }
 
 .topic-content form {
@@ -134,9 +144,9 @@ footer {
     font-size: 24px;
 }
 
-@media screen and (min-width: 600px) {
-    .content-container, .topic-container {
-        margin: auto;
-        max-width: 1000px;
+@media screen and (max-width: 650px) {
+    .form-entry {
+        display: flex;
+        height: 20%;
     }
 }
