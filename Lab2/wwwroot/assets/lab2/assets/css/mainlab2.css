@@ -1,15 +1,20 @@
 ﻿body {
+    background-image: url("/assets/lab2/assets/img/puppy-background.jpg");
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     background-color: darkgrey;
+    background-repeat: no-repeat;
 }
 
 .navbar-container {
     overflow: hidden;
     background-color: grey;
     border: 1px solid black;
+    height: auto;
+    width: auto;
 }
 
 .navbar-container a {
@@ -37,24 +42,31 @@
 .content-container {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 100%;
     height: auto;
     background-color: lightgrey;
-    opacity: 0.85;
+    opacity: 0.95;
     text-align: center;
     position: relative;
-    left: 15%;
 }
 
 .topic-container {
     border: 1px solid black;
+    width: 100%;
 }
 
 .image-container {
-    position: relative;
-    margin-left: 14%;
-    float: left;
-    text-align: center;
+    float: left; 
+    width: 25%;
+    margin: 1%;
+}
+
+.image-container img {
+    width: 100%;
+    margin: 1%;
+    margin-bottom: 8px;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
 .image-container p {
@@ -68,8 +80,8 @@
 }
 
 .info-image-container {
-    width: 400px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
     border: 4px solid black;
     border-radius: 15px;
 }
@@ -80,7 +92,7 @@
 }
 
 .dog-desc {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .dog-stats {
@@ -96,15 +108,35 @@
     clear: left;
 }
 
+#form-header-prompt {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    width: 50%;
+    left: 25%;
+    padding: 14px;
+}
+
 .topic-content form {
     text-align: left;
     margin-left: 15px;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
-    text-align: right;
-    padding-right: 15px;
+    text-align: center;
+    padding: 40px;
     border-top: 1px solid white;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 600px) {
+    .content-container, .topic-container {
+        margin: auto;
+        max-width: 1000px;
+    }
 }
