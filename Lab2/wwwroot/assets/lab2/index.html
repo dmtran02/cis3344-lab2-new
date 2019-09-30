@@ -7,16 +7,28 @@
         <title>Lab 2 Page</title>
     </head>
     <body>
-        <div class="header-container">
-            <h1 id="header-title">Dog Breed Rankings</h1>
+        <div class="navbar-container-list">
+            <div id="logo">
+                <img src="./assets/img/logo-dog-main.jpg" />
+            </div>
+            <ul id="navbar">
+                <li><a id="tab1" class="active" href="../../index.html">Home</a></li>
+                <li><a id="tab2" href="#landingpage">Landing Page</a></li>
+                <li><a id="tab3" href="#informationalpage">Informational Page</a></li>
+                <li><a id="tab4" href="#formpage">Form Page</a></li>
+                <li><a id="tab5" href="#photogallerypage">Photo Gallery Page</a></li>
+            </ul>
         </div>
+    <!--
         <div class="navbar-container">
-            <a class="active" href="">Home</a>
-            <a href="#landingpage">Landing Page</a>
-            <a href="#informationalpage">Informational Page</a>
-            <a href="#formpage">Form Page</a>
-            <a href="#photogallerypage">Photo Gallery Page</a>
+            <a id="tab1" class="active" href="">Home</a>
+            <a id="tab2" href="#landingpage">Landing Page</a>
+            <a id="tab3" href="#informationalpage">Informational Page</a>
+            <a id="tab4" href="#formpage">Form Page</a>
+            <a id="tab5" href="#photogallerypage">Photo Gallery Page</a>
         </div>
+    -->
+        <br />
         <br />
         <div class="content-container">
             <div class="topic-container">
@@ -24,21 +36,27 @@
                 <h1 class="topic-header">Landing Page</h1>
                 <div class="topic-content">
                     <h1 class="content-header">Welcome to Dog Breeds Ranking List!</h1>
-                    <p>
-                        This will serve as a homepage and provide information
-                        regarding the website
+                    <br />
+                    <img src="/assets/img/fancy-doge-with-bg.png"/>
+                    <br />
+                    <div>
+                        <p id="landing-page-desc">
+                        Hello there! This is a webpage that shows the current ranking of dog breeds
+                        as of September, 2019.
+                        <br />If you have any questions, please place your answers
+                        in the form below. Also, if you have time, please fill it out as well. I would
+                        like to know more about you!
                     </p>
+                    </div>
+                    <br />
                 </div>
             </div>
             <div class="topic-container">
                 <a name="informationalpage"></a>
                 <h1 class="topic-header">Informational Page</h1>
                 <div class="topic-content">
-                    <p>
-                        This will serve as the information page containing the main
-                        content for the site
-                    </p>
 
+                    <br />
                     <h1 class="info-header">Rank #1: Labrador Retriever</h1>
                     <img class="info-image-container" id="labrador-retriever-img" src="assets/img/labrador-retriever.jpg" />
                     <div class="info-content">
@@ -54,7 +72,8 @@
                         <strong>Height</strong>: Male: 22–24 inches (57–62 cm), Female: 22–24 inches (55–60 cm) <br />
                         <strong>Temperament</strong>: Intelligent, Even Tempered, Kind, Agile, Outgoing, Trusting, Gentle <br />
                     </div>
-
+                    <br />
+                    <br />
                     <h1 class="info-header">Rank #2 German Shepherd</h1>
                     <img class="info-image-container" id="german-shepherd-img" src="assets/img/german-shepherd.jpg" />
                     <div class="info-content">
@@ -70,7 +89,8 @@
                         <strong>Height</strong>: Male: 24–26 inches (60–65 cm), Female: 22–24 inches (55–60 cm) <br />
                         <strong>Temperament</strong>: Intelligent, Obedient, Loyal, Alert, Confident, Curious, Watchful, Courageous <br />
                     </div>
-
+                    <br />
+                    <br />
                     <h1 class="info-header">Rank #3 Golden Retriever</h1>
                     <img class="info-image-container" id="golden-retriever-img" src="assets/img/golden-retriever.jpg" />
                     <div class="info-content">
@@ -95,7 +115,7 @@
             <div class="topic-container">
                 <a name="formpage"></a>
                 <h1 class="topic-header">Form Page</h1>
-                <h1 id="form-header-prompt">Let us know what you think! Which dog breed is your favorite and why?</h1>
+                <h1 id="form-header-prompt">Please fill out the form and tell us more about yourself!</h1>
                 <br />
                 <div class="topic-content">
                     <div class="form-container">
@@ -108,9 +128,38 @@
                             <input type="text" name="lastname" /><br />
                             <br />
                             Email:
-                            <input type="text" name="email" /><br />
+                            <input type="text" name="email" />
                             <br />
-                            <textarea class="form-entry" rows="20" cols="100" name="form-answer" form="form1">Enter your answer here.</textarea>
+                            <br />
+                            Age:
+                            <input type="text" name="age" />
+                            <br />
+                            <br />
+                            Gender:
+                            <input type="radio" name="gender" value="Male"> Male
+                            <input type="radio" name="gender" value="Female"> Female
+                            <input type="radio" name="gender" value="Other"> Other
+                            <br />
+                            <br />
+                            How many dogs do you have?:
+                            <input type="text" name="dog-amount" />
+                            <br />
+                            <br />
+                            Which of the following is your favorite?   
+                            <input type="radio" name="favorite-animal" value="Dog"> Dog
+                            <input type="radio" name="favorite-animal" value="Cat"> Cat
+                            <input type="radio" name="favorite-animal" value="Dog"> Bird
+                            <input type="radio" name="favorite-animal" value="Dog"> None
+                            <input type="radio" name="favorite-animal" value="Dog"> Other
+                            <br />
+                            <br />
+                            <textarea class="form-entry" rows="20" cols="30" name="form-answer" form="form1">If none or other, why?</textarea>
+                            <br />
+                            <br />
+                            <textarea class="form-entry" rows="20" cols="30" name="form-answer" form="form1">Which dog breed is your favorite and why?</textarea>
+                            <br />
+                            <br />
+                            <textarea class="form-entry" rows="20" cols="30" name="form-answer" form="form1">What is your idea of a man's bestfriend?</textarea>
                             <br />
                             <br />
                             <input type="submit" name="submit" value="Submit">
@@ -124,6 +173,8 @@
             <div class="topic-container">
                 <a name="photogallerypage"></a>
                 <h1 class="topic-header">Photo Gallery</h1>
+                <br />
+                <br />
                 <div class="topic-content">
                     <div class="image-container">
                         <img src="/assets/lab2/assets/img/shiba-inu.jpg" alt="pic1" />
@@ -156,14 +207,6 @@
                         <p><em>"Beagle" <br />circa 1947</em></p>
                     </div>
                     <div id="float-clear"></div>
-                    <p>
-                        Desktop Version: This will serve as the photo gallery that will contain 6 images side-by-side
-                        without using a table.
-                    </p>
-                    <p>
-                        Mobile Version: The images must take up the entire width and appear stacked on top of each other
-                        for narrow screens.
-                    </p>
                 </div>
             </div>
         </div>

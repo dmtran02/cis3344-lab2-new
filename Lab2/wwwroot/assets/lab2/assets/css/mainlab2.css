@@ -1,20 +1,160 @@
-﻿body {
-    background-image: url("/assets/lab2/assets/img/puppy-background.jpg");
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /*background-image: url("/assets/lab2/assets/img/puppy-background.jpg");*/
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: darkgrey;
+    background-color: black;
     background-repeat: no-repeat;
 }
+
+.navbar-container-list {
+    width: 100%;
+    height: 80px;
+    background: #333;
+    box-shadow: 0px 3px 6px gray;
+}
+
+#navbar {
+    width: 1000px;
+    height: 80px;
+    float: right;
+}
+
+#navbar > li {
+    width: 198px;
+    list-style: none;
+    float: left;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+li > a {
+    display: block;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: skyblue;
+    color: #333;
+}
+
+#logo {
+     width: 200px;
+     height: 80px;
+     float: left;
+     position: relative;
+     z-index: 2;
+}
+
+#logo > img {
+    width: 200px;
+    height: 75px;
+}
+
+@media screen and (max-width: 1260px) {
+    #navbar {
+        width: 860px;
+    }
+
+    #navbar > li {
+        width: 160px;
+    }
+
+    #logo > img {
+        width: 150px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+
+    .navbar-container-list {
+        width: 100%;
+        height: 60px;
+        top: 80px;
+        z-index: 1;
+    }
+
+    #navbar {
+        width: 100%;
+        height: 60px;
+        float: right;
+        position: relative;
+    }
+
+    #navbar > li {
+        width: 130px;
+    }
+
+    li > a {
+        line-height: 60px;
+        font-size: 16px;
+    }
+
+    li > a:hover {
+        background-color: skyblue;
+        color: #333;
+    }
+
+    #logo {
+        width: 100%;
+        height: 80px;
+        float: left;
+        position: absolute;
+        top: -80px;
+        background-color: #333;
+    }
+}
+
+@media screen and (max-width: 715px) {
+     .navbar-container-list {
+        width: 100%;
+        height: 60px;
+    }
+
+    #navbar {
+        width: 100%;
+        height: 60px;
+        float: none;
+        z-index: 2;
+    }
+
+    #navbar > li {
+        width: 100%;
+        list-style: none;
+        float: none;
+        border-bottom: 1px solid skyblue;
+        background-color: #333;
+    }
+
+    #logo > img {
+        visibility: hidden;
+    }
+
+    .content-container {
+        top: 250px;
+    }
+}
+
 
 .navbar-container {
     overflow: hidden;
     background-color: grey;
     border: 1px solid black;
     height: auto;
-    width: auto;
+    width: 100%;
 }
 
 .navbar-container a {
@@ -27,6 +167,8 @@
     padding-bottom: 14px;
     padding-left: 50px;
     padding-right: 50px;
+    width: auto;
+    height: auto;
 }
 
 .navbar-container a:hover {
@@ -39,15 +181,20 @@
     color: white;
 }
 
+#landing-page-desc {
+    text-align: center;
+}
+
 .content-container {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 80%;
     height: auto;
     background-color: lightgrey;
     opacity: 0.95;
     text-align: center;
     position: relative;
+    left: 10%;
 }
 
 .topic-container {

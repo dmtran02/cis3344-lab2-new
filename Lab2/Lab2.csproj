@@ -10,4 +10,7 @@
 </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\lab2\assets\img\dog-logo-main.png" />
+  </ItemGroup>
 </Project>

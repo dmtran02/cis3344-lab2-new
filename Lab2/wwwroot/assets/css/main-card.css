@@ -1,10 +1,10 @@
 .labs-container {
     position: absolute;
-    /*border: 1px solid yellow;*/
+    border: 1px solid yellow;
     padding: 0;
     margin: 0;
     top: 20%;
-    left: 13%;
+    left: 15%;
     width: auto;
     height: auto;
     text-align: center;
@@ -15,7 +15,7 @@
     float: left;
     margin: 40px;
     padding: 0;
-    width: 400px;
+    width: 320px;
     height: 450px;
     color: white;
 }
@@ -52,4 +52,28 @@
 #missing-project-image {
     width: 300px;
     height: 300px;
+}
+
+@media screen and (max-width: 1425px) {
+    .labs-card {
+        border: 1px solid white;
+        float: left;
+        margin: 40px;
+        padding: 0;
+        width: 200px;
+        height: 525px;
+        color: white;
+    }
+
+    #missing-project-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    .labs-container {
+        position: relative;
+        left: 0%;
+    }
 }
